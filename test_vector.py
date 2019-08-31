@@ -88,20 +88,3 @@ def test_unit_vector():
 
     assert w.length == 1
     assert not (u is w)
-
-
-if __name__ == "__main__":
-    test_str()
-    test_repr()
-    test_add()
-    test_sub()
-    test_dot()
-    test_cross()
-    test_mul()
-    test_matmul()
-    test_perpendicular()
-    test_scalarmult_right()
-    test_scalarmult_left()
-    test_get_length()
-    test_set_length()
-    test_unit_vector()
