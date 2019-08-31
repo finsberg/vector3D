@@ -1,0 +1,7 @@
+language: python
+# command to install dependencies
+install:
+  - pip install numpy
+# command to run tests
+script:
+  - python -m pytest -v
