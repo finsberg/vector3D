@@ -1,7 +1,7 @@
 language: python
 # command to install dependencies
 install:
-  - pip install numpy
+  - pip install numpy pytest pytest-cov
 # command to run tests
 script:
-  - python -m pytest -v
+  - python -m pytest -v --cov
