@@ -15,8 +15,8 @@ Testing CI and github-pages
 Testing with Continous Itegration (CI)
 --------------------------------------
 
-.. |Build Status| image:: https://travis-ci.com/finsberg/vector3D_travis.svg?branch=master
-   :target: https://travis-ci.com/finsberg/vector3D_travis
+.. |Build Status| image:: https://travis-ci.com/finsberg/vector3D.svg?branch=master
+   :target: https://travis-ci.com/finsberg/vector3D
 
 
 We would like to run our tests every time we push in order to make sure
@@ -227,6 +227,7 @@ All steps can be summarized in the following bash script
    git add .
    git commit -m "Update documentation"
    git push -u origin gh-pages
+   git checkout master
 
 Finally go to GitHub, click on settings. Scroll down to the section
 called GitHub pages, and select ``gh-pages branch``. It will now tell

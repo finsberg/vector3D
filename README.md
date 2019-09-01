@@ -9,7 +9,7 @@ For more information about how to test your python project check out the [docume
 
 Add a badge with the information about whether test passed or not. In my case this was
 
-[![Build Status](https://travis-ci.com/finsberg/vector3D_travis.svg?branch=master)](https://travis-ci.com/finsberg/vector3D_travis)
+[![Build Status](https://travis-ci.com/finsberg/vector3D.svg?branch=master)](https://travis-ci.com/finsberg/vector3D)
 
 
 ## Creating documentation for your code.
@@ -173,6 +173,7 @@ rm -r docs *py README.md LICENSE
 git add .
 git commit -m "Update documentation"
 git push -u origin gh-pages
+git checkout master
 ```
 Finally go to GitHub, click on settings. Scroll down to the section called GitHub pages, and select `gh-pages branch`.
 It will now tell you that your site will be published at https://username.github.uio/vector3D, in my case this is https://finsberg.github.uio/vector3D
