@@ -176,4 +176,4 @@ git push -u origin gh-pages
 git checkout master
 ```
 Finally go to GitHub, click on settings. Scroll down to the section called GitHub pages, and select `gh-pages branch`.
-It will now tell you that your site will be published at https://username.github.uio/vector3D, in my case this is https://finsberg.github.uio/vector3D
+It will now tell you that your site will be published at https://username.github.io/vector3D, in my case this is https://finsberg.github.io/vector3D
