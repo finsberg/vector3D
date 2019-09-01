@@ -226,6 +226,7 @@ All steps can be summarized in the following bash script
    rm -r docs *py README.md LICENSE
    git add .
    git commit -m "Update documentation"
+   git push -u origin gh-pages
 
 Finally go to GitHub, click on settings. Scroll down to the section
 called GitHub pages, and select ``gh-pages branch``. It will now tell
