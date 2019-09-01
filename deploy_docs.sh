@@ -5,6 +5,6 @@ make html
 cd ..
 git checkout gh-pages
 cp -r docs/build/html/* .
-rm -r docs code
+rm -r docs *py README.md LICENSE
 git add .
 git commit -m "Update documentation"

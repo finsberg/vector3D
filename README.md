@@ -142,7 +142,7 @@ git checkout -b gh-pages
 ```
 Now delete everything in the repo and commit it
 ```
-rm -rf *
+rm -r *
 git add -u
 git commit -m "Remove all files"
 ```
@@ -169,7 +169,7 @@ make html
 cd ..
 git checkout gh-pages
 cp -r docs/build/html/* .
-rm -r docs code
+rm -r docs *py README.md LICENSE
 git add .
 git commit -m "Update documentation"
 git push -u origin gh-pages
