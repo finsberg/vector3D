@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to Vector3D’s documentation! &mdash; Vector3D 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="vector3D" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> Vector3D
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">vector3D</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Vector3D</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to Vector3D’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-vector3d-s-documentation">
+<h1>Welcome to Vector3D’s documentation!<a class="headerlink" href="#welcome-to-vector3d-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>This is a simple example of how to test and document your code using <cite>travis-ci</cite> and <cite>sphinx</cite>.</p>
+</div>
+<div class="section" id="testing-ci-and-github-pages">
+<h1>Testing CI and github-pages<a class="headerlink" href="#testing-ci-and-github-pages" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="testing-with-continous-itegration-ci">
+<h2>Testing with Continous Itegration (CI)<a class="headerlink" href="#testing-with-continous-itegration-ci" title="Permalink to this headline">¶</a></h2>
+<p>We would like to run our tests every time we push in order to make sure
+that any update to the code does not break any core functionality.</p>
+<p>Follow the <a class="reference external" href="https://docs.travis-ci.com/user/tutorial/">instructions</a>
+on how to set up travis-ci.</p>
+<p>For more information about how to test your python project check out the
+<a class="reference external" href="https://docs.travis-ci.com/user/languages/python/">documentation</a></p>
+<p>Add a badge with the information about whether test passed or not. In my
+case this was</p>
+<p><a class="reference external" href="https://travis-ci.com/finsberg/vector3D_travis"><img alt="Build Status" src="https://travis-ci.com/finsberg/vector3D_travis.svg?branch=master" /></a></p>
+</div>
+<div class="section" id="creating-documentation-for-your-code">
+<h2>Creating documentation for your code.<a class="headerlink" href="#creating-documentation-for-your-code" title="Permalink to this headline">¶</a></h2>
+<p>We will use <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> to generate documentation and we will publish the
+documentation using github pages. Create a the directory where we will
+put the documentation</p>
+<p>mkdir docs cd docs Now we run the <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> which is the
+first step in generating documentation. This will ask you some
+questions, and I will reply as follows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
+Welcome to the Sphinx 1.8.3 quickstart utility.
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+Selected root path: .
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory &quot;_build&quot; within the root path, or you separate
+&quot;source&quot; and &quot;build&quot; directories within the root path.
+&gt; Separate source and build directories (y/n) [n]: y
+
+Inside the root directory, two more directories will be created; &quot;_templates&quot;
+for custom HTML templates and &quot;_static&quot; for custom stylesheets and other static
+files. You can enter another prefix (such as &quot;.&quot;) to replace the underscore.
+&gt; Name prefix for templates and static dir [_]:
+
+The project name will occur in several places in the built documentation.
+&gt; Project name: Vector3D
+&gt; Author name(s): Henrik Finsberg
+&gt; Project release []: 2.0
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+http://sphinx-doc.org/config.html#confval-language.
+&gt; Project language [en]:
+
+The file name suffix for source files. Commonly, this is either &quot;.txt&quot;
+or &quot;.rst&quot;.  Only files with this suffix are considered documents.
+&gt; Source file suffix [.rst]:
+
+One document is special in that it is considered the top node of the
+&quot;contents tree&quot;, that is, it is the root of the hierarchical structure
+of the documents. Normally, this is &quot;index&quot;, but if your &quot;index&quot;
+document is a custom template, you can also set this to another filename.
+&gt; Name of your master document (without suffix) [index]:
+Indicate which of the following Sphinx extensions should be enabled:
+&gt; autodoc: automatically insert docstrings from modules (y/n) [n]: y
+&gt; doctest: automatically test code snippets in doctest blocks (y/n) [n]:
+&gt; intersphinx: link between Sphinx documentation of different projects (y/n) [n]: y
+&gt; todo: write &quot;todo&quot; entries that can be shown or hidden on build (y/n) [n]:
+&gt; coverage: checks for documentation coverage (y/n) [n]:
+&gt; imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
+&gt; mathjax: include math, rendered in the browser by MathJax (y/n) [n]: y
+&gt; ifconfig: conditional inclusion of content based on config values (y/n) [n]:
+&gt; viewcode: include links to the source code of documented Python objects (y/n) [n]: y
+&gt; githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]: y
+
+A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g. `make html&#39; instead of invoking sphinx-build
+directly.
+&gt; Create Makefile? (y/n) [y]:
+&gt; Create Windows command file? (y/n) [y]: n
+
+Creating file ./source/conf.py.
+Creating file ./source/index.rst.
+Creating file ./Makefile.
+
+Finished: An initial directory structure has been created.
+
+You should now populate your master file ./source/index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
+</pre></div>
+</div>
+<p>You can look at your documentation by running</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+<span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">http</span><span class="o">.</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>Then open a web-browser and go to <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>, and navigate to
+build/html.</p>
+<div class="section" id="creating-api-documentation">
+<h3>Creating API documentation<a class="headerlink" href="#creating-api-documentation" title="Permalink to this headline">¶</a></h3>
+<p>Now we will make the documentation for our python package</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">apidoc</span> <span class="o">-</span><span class="n">o</span> <span class="n">source</span><span class="o">/</span> <span class="o">..</span>
+</pre></div>
+</div>
+<p>If you now try to run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> then you will get the following
+error:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WARNING</span><span class="p">:</span> <span class="n">autodoc</span><span class="p">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="kn">import</span> <span class="nn">module</span> <span class="s1">&#39;test_vector&#39;</span><span class="p">;</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">raised</span><span class="p">:</span>
+<span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;test_vector&#39;</span>
+<span class="n">WARNING</span><span class="p">:</span> <span class="n">autodoc</span><span class="p">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="kn">import</span> <span class="nn">module</span> <span class="s1">&#39;vector&#39;</span><span class="p">;</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">raised</span><span class="p">:</span>
+<span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;vector&#39;</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>To fix this open <code class="docutils literal notranslate"><span class="pre">source/conf.py</span></code> and add the following lines at the
+top</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s2">&quot;../..&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Now if you try to run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>, you will get a new warining saying:
+<code class="docutils literal notranslate"><span class="pre">Unexpected</span> <span class="pre">section</span> <span class="pre">title</span></code>, and this is because I have documented the
+code using the numpy style, which is not default. Open source/conf.py
+and add <code class="docutils literal notranslate"><span class="pre">sphinx.ext.napoleon</span></code> to the list called extensions. Let us
+also change the html theme. Scroll down and set
+<code class="docutils literal notranslate"><span class="pre">html_theme</span> <span class="pre">=</span> <span class="pre">&quot;sphinx_rtd_theme&quot;</span></code>, and run pip install
+sphinx-rtd-theme.</p>
+<p>You can look at your documentation by running</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+<span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">http</span><span class="o">.</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>Then open a web-browser and go to <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>, and navigate to
+build/html.</p>
+<p>Now you can also add some more information to <code class="docutils literal notranslate"><span class="pre">source/index.rst</span></code> in
+order to display some more information on the index page. I have in this
+example converted the README file to restructured text (.rst) and pasted
+this in.</p>
+</div>
+<div class="section" id="building-documenation-that-will-be-hosted-on-github-pages">
+<h3>Building documenation that will be hosted on github pages<a class="headerlink" href="#building-documenation-that-will-be-hosted-on-github-pages" title="Permalink to this headline">¶</a></h3>
+<p>Create a new branch called <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+</div>
+<p>Now delete everything in the repo and commit it</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rm</span> <span class="o">-</span><span class="n">r</span> <span class="o">*</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Remove all files&quot;</span>
+</pre></div>
+</div>
+<p>Now go back to the <code class="docutils literal notranslate"><span class="pre">master</span></code> brach and build the documentation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">cd</span> <span class="n">docs</span>
+<span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+<p>This will build the html documentation. Now checkout the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>
+branch again, move the html files to the root folder and add them.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+<span class="n">mv</span> <span class="n">docs</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">html</span><span class="o">/*</span> <span class="o">.</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">r</span> <span class="n">docs</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+<span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Adding documentation&quot;</span>
+</pre></div>
+</div>
+<p>All steps can be summarized in the following bash script</p>
+<div class="code shell highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">cd</span> <span class="n">docs</span>
+<span class="n">make</span> <span class="n">html</span>
+<span class="n">cd</span> <span class="o">..</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+<span class="n">cp</span> <span class="o">-</span><span class="n">r</span> <span class="n">docs</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">html</span><span class="o">/*</span> <span class="o">.</span>
+<span class="n">rm</span> <span class="o">-</span><span class="n">r</span> <span class="n">docs</span> <span class="o">*</span><span class="n">py</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span> <span class="n">LICENSE</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Update documentation&quot;</span>
+</pre></div>
+</div>
+<p>Finally go to GitHub, click on settings. Scroll down to the section
+called GitHub pages, and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span> <span class="pre">branch</span></code>. It will now tell
+you that your site will be published at
+<a class="reference external" href="https://username.github.uio/vector3D">https://username.github.uio/vector3D</a>, in my case this is
+<a class="reference external" href="https://finsberg.github.uio/vector3D">https://finsberg.github.uio/vector3D</a></p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">vector3D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="test_vector.html">test_vector module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector.html">vector module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="vector3D" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Henrik Finsberg
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
