@@ -11,7 +11,7 @@ import numpy as np
 
 class Vector3D:
     """
-    A class for creating 3D vectors
+    A class for creating 3D vectors.
 
     Arguments
     ---------
@@ -75,7 +75,7 @@ class Vector3D:
         return Vector3D(x, y, z)
 
     def dot(self, other):
-        r"""Compute the dot product
+        r"""Compute the dot product.
 
         .. math::
 
@@ -84,7 +84,7 @@ class Vector3D:
         Arguments
         ---------
         other : Vector3D
-            Vector that you want to dot
+            Vector that you want to dot.
 
         Returns
         -------
@@ -94,7 +94,7 @@ class Vector3D:
         return self.x * other.x + self.y * other.y + self.z * other.z
 
     def cross(self, other):
-        r"""Compute the cross product
+        r"""Compute the cross product.
 
         .. math::
 
@@ -139,6 +139,19 @@ class Vector3D:
         return self.cross(other)
 
     def perpendicular(self, other):
+        """
+        Check if a vector is perpendicular
+
+        Arguments
+        ---------
+        other : Vector3D
+            The vector that you want to check is perpendicular.
+
+        Returns
+        -------
+        bool
+            True if they are perpendicular, and False otherwise.
+        """
         return abs(self * other) < 1e-9
 
     def __rmul__(self, other):
@@ -146,18 +159,20 @@ class Vector3D:
 
     @property
     def length(self):
-        """Get length of vector (2-norm)
+        """
+        Get length of vector (2-norm)
         """
         return np.sqrt(self * self)
 
     @length.setter
     def length(self, new_length):
-        """Set length of the vector
+        """
+        Set length of the vector.
 
         Raises
         ------
         ValueError
-            If you try to set length equal a non-positive value
+            If you try to set length equal a non-positive value.
         """
         if new_length < 1e-12:
             raise ValueError("Cannot set length equal to zero or a negative value")
@@ -167,9 +182,10 @@ class Vector3D:
         self.z *= scale
 
     def unit(self):
-        """"Return a vector in pointing in the same direction
-        of unit length
-        """"
+        """
+        Return a vector in pointing in the same direction
+        of unit length.
+        """
         new_vector = Vector3D(self.x, self.y, self.z)
         new_vector.length = 1
         return new_vector
