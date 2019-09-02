@@ -235,6 +235,23 @@ you that your site will be published at
 https://username.github.io/vector3D, in my case this is
 https://finsberg.github.io/vector3D
 
+
+Problems with style-sheets
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If your site is displaying but the styling is wrong then you can try to
+add an empty file called ``.nojekyll`` to the ``gh-pages`` branch, i.e
+
+::
+
+   git checkout gh-pages
+   touch .nojekyll
+   git add .nojekyll
+   git commit -m "Add .nojekyll"
+   git push -u origin gh-pages
+   git checkout master
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
