@@ -237,7 +237,7 @@ https://finsberg.github.io/vector3D
 
 
 Problems with style-sheets
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your site is displaying but the styling is wrong then you can try to
 add an empty file called ``.nojekyll`` to the ``gh-pages`` branch, i.e
