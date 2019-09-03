@@ -1,5 +1,5 @@
 """
-This module contains the Vector3D class to be used 
+This module contains the Vector3D class to be used
 for illustrating how to document and test a project.
 
 A good example of the NumPy style can be found here:
@@ -24,7 +24,7 @@ class Vector3D:
 
     Example
     -------
-    .. code:: 
+    .. code::
 
         >>> u = Vector3D(1, 1, 1)
         >>> v = Vector3D(1, 2, 3)
@@ -35,6 +35,7 @@ class Vector3D:
     """
 
     def __init__(self, x, y, z):
+
         self.x = x
         self.y = y
         self.z = z
@@ -175,7 +176,8 @@ class Vector3D:
             If you try to set length equal a non-positive value.
         """
         if new_length < 1e-12:
-            raise ValueError("Cannot set length equal to zero or a negative value")
+            msg = "Cannot set length equal to zero or a negative value"
+            raise ValueError(msg)
         scale = new_length / self.length
         self.x *= scale
         self.y *= scale
