@@ -350,6 +350,35 @@ add an empty file called <code class="docutils literal notranslate"><span class=
 <span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+<div class="section" id="installing-a-pre-commit-hooks">
+<h1>Installing a pre-commit hooks<a class="headerlink" href="#installing-a-pre-commit-hooks" title="Permalink to this headline">¶</a></h1>
+<p>A pre-commit hook is a hook (or a small program) that runs every time
+you try to commit to you repository. In this tutorial we will show how
+you can set up a pre-commit hook that runs black and flake8 every time
+you try to commit. If black and flake8 gives you thumbs up, then your
+changes will be commited, otherwise you will be asked to revise your
+code and change it so that black and flake8 passes.</p>
+<p>First you need to install the <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> package
+(<a class="reference external" href="https://pre-commit.com">https://pre-commit.com</a>). Therearefter you need to add a
+pre-commit-config file to your repository. Add a file called
+<code class="docutils literal notranslate"><span class="pre">.pre-commit-config.yaml</span></code> with the following content (taken from
+<a class="reference external" href="https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/">https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/</a>)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span>   <span class="n">repo</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ambv</span><span class="o">/</span><span class="n">black</span>
+    <span class="n">rev</span><span class="p">:</span> <span class="n">stable</span>
+    <span class="n">hooks</span><span class="p">:</span>
+    <span class="o">-</span> <span class="nb">id</span><span class="p">:</span> <span class="n">black</span>
+      <span class="n">language_version</span><span class="p">:</span> <span class="n">python3</span><span class="o">.</span><span class="mi">7</span>
+<span class="o">-</span>   <span class="n">repo</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pre</span><span class="o">-</span><span class="n">commit</span><span class="o">/</span><span class="n">pre</span><span class="o">-</span><span class="n">commit</span><span class="o">-</span><span class="n">hooks</span>
+    <span class="n">rev</span><span class="p">:</span> <span class="n">v1</span><span class="o">.</span><span class="mf">2.3</span>
+    <span class="n">hooks</span><span class="p">:</span>
+    <span class="o">-</span> <span class="nb">id</span><span class="p">:</span> <span class="n">flake8</span>
+</pre></div>
+</div>
+<p>Now commit this file to your repository and run the command
+<code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code></p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
@@ -359,8 +388,6 @@ add an empty file called <code class="docutils literal notranslate"><span class=
 </ul>
 </li>
 </ul>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="indices-and-tables">

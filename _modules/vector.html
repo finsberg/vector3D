@@ -146,7 +146,7 @@
             
   <h1>Source code for vector</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">This module contains the Vector3D class to be used </span>
+<span class="sd">This module contains the Vector3D class to be used</span>
 <span class="sd">for illustrating how to document and test a project.</span>
 
 <span class="sd">A good example of the NumPy style can be found here:</span>
@@ -171,7 +171,7 @@
 
 <span class="sd">    Example</span>
 <span class="sd">    -------</span>
-<span class="sd">    .. code:: </span>
+<span class="sd">    .. code::</span>
 
 <span class="sd">        &gt;&gt;&gt; u = Vector3D(1, 1, 1)</span>
 <span class="sd">        &gt;&gt;&gt; v = Vector3D(1, 2, 3)</span>
@@ -182,6 +182,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">z</span>
@@ -322,7 +323,8 @@
 <span class="sd">            If you try to set length equal a non-positive value.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">new_length</span> <span class="o">&lt;</span> <span class="mf">1e-12</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot set length equal to zero or a negative value&quot;</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;Cannot set length equal to zero or a negative value&quot;</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="n">scale</span> <span class="o">=</span> <span class="n">new_length</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">*=</span> <span class="n">scale</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">*=</span> <span class="n">scale</span>
