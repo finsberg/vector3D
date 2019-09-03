@@ -188,3 +188,24 @@ git commit -m "Add .nojekyll"
 git push -u origin gh-pages
 git checkout master
 ```
+
+# Installing a pre-commit hooks
+
+A pre-commit hook is a hook (or a small program) that runs every time you try to commit to you repository. In this tutorial we will show how you can set up a pre-commit hook that runs black and flake8 every time you try to commit. If black and flake8 gives you thumbs up, then your changes will be commited, otherwise you will be asked to revise your code and change it so that black and flake8 passes. 
+
+
+First you need to install the `pre-commit` package (https://pre-commit.com).
+Therearefter you need to add a pre-commit-config file to your repository.
+Add a file called `.pre-commit-config.yaml` with the following content (taken from https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/)
+```
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.7
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.3
+    hooks:
+    - id: flake8
+```
+Now commit this file to your repository and run the command `pre-commit install`
