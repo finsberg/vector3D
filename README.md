@@ -15,7 +15,7 @@ Add a badge with the information about whether test passed or not. In my case th
 ## Creating documentation for your code.
 
 We will use `sphinx` to generate documentation and we will publish the documentation using github pages. 
-Create a the directory where we will put the documentation
+Create a the directory `docs` where we will put the documentation
 ```
 mkdir docs
 cd docs
