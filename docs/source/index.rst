@@ -37,10 +37,15 @@ Creating documentation for your code.
 -------------------------------------
 
 We will use ``sphinx`` to generate documentation and we will publish the
-documentation using github pages. Create a the directory where we will
+documentation using github pages. Create a the directory ``docs`` where we will
 put the documentation
 
-mkdir docs cd docs Now we run the ``sphinx-quickstart`` which is the
+:: 
+
+   mkdir docs
+   cd docs 
+
+Now we run the ``sphinx-quickstart`` which is the
 first step in generating documentation. This will ask you some
 questions, and I will reply as follows
 
