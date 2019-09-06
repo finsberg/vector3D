@@ -120,9 +120,9 @@ class Vector3D:
         float
             The dot product
         """
-        x = self.y * other.z + self.z * other.y
-        y = self.z * other.x + self.x * other.z
-        z = self.x * other.y + self.y * other.x
+        x = self.y * other.z - self.z * other.y
+        y = self.z * other.x - self.x * other.z
+        z = self.x * other.y - self.y * other.x
         return Vector3D(x, y, z)
 
     def __mul__(self, other):
