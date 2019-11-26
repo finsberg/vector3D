@@ -6,4 +6,4 @@ install:
 script:
   - python -m pytest -v --cov=vector
 after_success:
-  - codecov
+  - codecov --token=CODECOV_TOKEN
