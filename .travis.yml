@@ -1,7 +1,9 @@
 language: python
 # command to install dependencies
 install:
-  - pip install numpy pytest pytest-cov
+  - pip install numpy pytest pytest-cov codecov
 # command to run tests
 script:
-  - python -m pytest -v --cov
+  - python -m pytest -v --cov=vector
+after_success:
+  - codecov
